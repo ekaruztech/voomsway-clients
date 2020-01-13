@@ -1,0 +1,332 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.navbar-toggler-icon {
+  color: #ff3333 !important;
+}
+
+.nav-link .nav-link {
+  color: #ff3333 !important;
+  margin-right: 7px;
+  font-size: 15px !important;
+  font-weight: bold !important;
+}
+
+.headersection {
+  height: 80vh;
+  background: url("../images/siting.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.terminalloc {
+  font-size: 18px;
+}
+
+.pricesec {
+  font-size: 23px;
+  font-weight: 900 !important;
+}
+
+.pricemore {
+  font-size: 13px !important;
+  text-align: end !important;
+}
+
+.welcomediv {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 500;
+  text-shadow: 1px 1px 6px grey;
+}
+.welcomediv .welcomeColor {
+  color: #ff3333;
+  font-weight: 700;
+  text-shadow: none !important;
+}
+
+.welcometext {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-shadow: 1px 1px 6px grey;
+}
+
+.fa-3x {
+  color: #b4b4b4 !important;
+}
+
+.contactinfo {
+  color: #b4b4b4;
+  font-weight: 500;
+}
+
+.title {
+  font-weight: 500;
+  margin: auto 0;
+}
+
+.aboutimg {
+  height: 350px;
+}
+
+.card-body {
+  color: #88a6b7;
+  font-size: 16px;
+}
+
+.main-section {
+  min-height: 80vh;
+}
+.main-section .contact_title {
+  color: #ff3333;
+  font-size: 18px;
+}
+.main-section .section-title {
+  background: #ff3333;
+  color: #FFFFFF;
+  padding: 20px;
+}
+.main-section .contact_form .btn-primary {
+  background-color: #ff3333;
+  color: #ffffff;
+  border-color: #ff3333;
+}
+.main-section .contact_form .form-control {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #b4b4b4 !important;
+}
+.main-section .contact_form .form-control::placeholder {
+  color: #b4b4b4;
+  font-size: 18px;
+}
+.main-section .contact_form textarea {
+  width: 100%;
+  height: 120px;
+}
+.main-section .contact_form textarea::placeholder {
+  color: #b4b4b4;
+  font-size: 18px;
+}
+.main-section .about {
+  padding-top: 40px;
+}
+.main-section .about h1 {
+  color: #ff3333;
+}
+.main-section .about p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.main-section .about .border-info {
+  color: #b4b4b4 !important;
+}
+.main-section .terminal {
+  padding: 20px;
+}
+.main-section .terminal .card {
+  height: 300px;
+}
+
+.bg-success {
+  color: white !important;
+  background-color: #ff3333 !important;
+  font-size: 20px;
+}
+
+.tablebody {
+  color: #b4b4b4 !important;
+  font-size: 16px;
+}
+
+.page-link {
+  color: #b4b4b4 !important;
+}
+
+.brandlogo {
+  height: 50px !important;
+}
+
+.receipt-title {
+  padding: 20px;
+  color: white;
+  background-color: #e7ece9;
+}
+
+.h-size {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.btn-dark {
+  background-color: #94a1b8;
+  border: 0;
+}
+.btn-dark:hover {
+  background-color: #361737 !important;
+}
+
+.thead-purple {
+  background-color: #361737 !important;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 560px) {
+  .headersection {
+    background-image: url("../images/siting.jpg");
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .welcomediv {
+    font-size: 28px !important;
+  }
+}
+.vm-voomsway-filter {
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: rgba(255, 255, 255, 0.9);
+}
+.vm-voomsway-filter .vm-checkbox-label {
+  margin: 0;
+}
+.vm-voomsway-filter .vm-checkbox-label.active {
+  background-color: #ff3333;
+  border: 0;
+}
+.vm-voomsway-filter .vm-btn-primary {
+  background-color: #ff3333 !important;
+  border: 0;
+}
+.vm-voomsway-filter .vm-btn-primary:hover {
+  background-color: #ff3333 !important;
+}
+.vm-voomsway-filter .vm-check-ticket-section .ticket-field-input {
+  margin-right: 12px;
+}
+.vm-voomsway-filter .vm-tab-section .vm-tab-label {
+  color: #401010 !important;
+}
+.vm-voomsway-filter .vm-tab-section .vm-tab-label.vm-active-tab {
+  border-bottom: 3px solid #ff3333;
+  color: #ff3333 !important;
+}
+
+.btn-custom-primary {
+  background-color: #ff3333 !important;
+}
+
+.btn-custom-white {
+  color: #ff3333 !important;
+}
+
+.color-custom {
+  color: #ff3333 !important;
+}
+
+.number {
+  background-color: #ff3333 !important;
+  border: 1px solid #ff3333 !important;
+}
+
+.book-now {
+  background-color: #ff3333 !important;
+}
+
+.card-body {
+  color: #989898 !important;
+  font-size: 14px !important;
+}
+
+.auth-actions-btns a {
+  color: #ff3333 !important;
+}
+
+.list-inline-item {
+  color: white;
+}
+.list-inline-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.theme-background-color {
+  background-color: #ff3333 !important;
+}
+
+.Progress .progress-spinner-message {
+  color: #ff3333 !important;
+}
+.Progress > div {
+  background-color: #ff3333 !important;
+}
+.Progress.alt div {
+  background-color: #ffffff !important;
+}
+.Progress.alt .progress-spinner-message {
+  color: #ffffff !important;
+}
+
+.v-way-main a {
+  color: #ff3333 !important;
+}
+
+.popular_trips {
+  color: #DC143C;
+}
+
+.card .card-title {
+  color: black !important;
+  font-size: 14px !important;
+}
+.card .card_terminal {
+  color: black;
+  font-size: 17px;
+}
+.card .card-amount {
+  color: black;
+  font-weight: 900;
+}
+.card .view-detail {
+  font-size: 12px !important;
+}
+
+.cross-title {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.home-service {
+  font-size: 18px;
+}
+
+.bus-route {
+  background-color: #ff3333;
+}
+.bus-route .border {
+  border: 1px solid #ed969e !important;
+}
+.bus-route .route_list {
+  font-size: 16px;
+}
+
+.book-ticket {
+  background-color: #ff3333;
+}
+
+/*# sourceMappingURL=styles.css.map */

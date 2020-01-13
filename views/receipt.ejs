@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<% include partials/header.ejs %>
+
+<body>
+<% include partials/navbar.ejs %>
+<section class="main-section">
+
+    <div class="container-fluid receipt-title">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 text-center">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 ">
+                <button type="button" class="btn btn-dark mt-3 px-4">Print</button>
+                <div class="d-flex justify-content-center py-3"><img src="/images/Divine-Express-main-logo.png" style="height: 40px;" ></div>
+                <h1 class="text-center my-1 h-size">Divine Express Intl<br> Transport Company.</h1>
+            </div>
+        </div>
+
+        <table class="table table-striped my-5">
+            <thead class="thead-purple">
+            <tr>
+                <th scope="col">Trip Information</th>
+                <th></th>
+                <th></th>
+                <th scope="col">Ref: QEOQPH7CZA3A</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>Lagos,Lagos <br>Take off</td>
+                <td>Imo, Owerri <br>Destination</td>
+                <td>20th August, 2019 <br>Departure Date</td>
+                <td>6:00AM <br>Departure Time</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-striped my-5">
+            <thead class="thead-purple">
+            <th scope="col">Ticket Information</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            </thead>
+
+            <tbody>
+            <td>Lagos, Lagos  Imo, Owerri <br>Trip</td>
+            <td>2 <br>Seats</td>
+            <td>1,6 <br>Booked Seat</td>
+            <td>₦6,000.00, <br>Unit Price<br></td>
+            <td>₦12,000.00, <br>Total Price</td>
+            </tbody>
+        </table>
+
+        <table class="table table-striped my-5">
+            <thead class="thead-purple">
+            <th scope="col">Trip Manifest (Lagos, Lagos  Imo, Owerri)</th>
+            <th></th>
+            <th></th>
+            <th scope="col">Manifest unavailable</th>
+            </thead>
+
+            <tbody>
+            <td>Seat</td>
+            <td>Name</td>
+            <td>Mobile</td>
+            <td>Next of Kin</td>
+            </tbody>
+
+            <tbody>
+            <td>6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            </tbody>
+        </table>
+    </div>
+
+    <% include partials/footer.ejs %>
+
+</section>
+
+
+</body>
+</html>
