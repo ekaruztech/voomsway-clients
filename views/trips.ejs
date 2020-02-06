@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <link rel="stylesheet" media="screen" href="https://unpkg.com/voomsway@latest/voomsway.css">
+    <!--<link rel="stylesheet" media="screen" href="https://unpkg.com/voomsway@latest/voomsway.css">-->
+    <link rel="stylesheet" media="screen" href="/styles/voomsway.css">
     <link rel="stylesheet" href='/css/styles.css'/>
     <link href="/images/car-img-receipt.png" type="image/x-icon" rel="shortcut icon"/>
     <title>Imo State Mass Transport Company</title>
@@ -25,13 +26,14 @@
 <% include partials/navbar.ejs %>
 <section id="voomsway" class="main-section"
          data-apikey="<%= process.env.VOOMSWAY_API_KEY %>"
+         data-apiClientKey="<%= process.env.VOOMSWAY_CLIENT_KEY %>"
          data-apiUrl="<%= process.env.VOOMSWAY_API_HOST %>"
          data-baseUrl="<%= process.env.HOST %>"
          data-verifyRedirect="<%= process.env.HOST %>/vway/verify-link"
          data-passwordRedirect="<%= process.env.HOST %>/vway/update-password"
-         data-fbid="<%= (social_auth_keys) ? social_auth_keys.facebook_app_id : '' %>"
-         data-gid="<%= (social_auth_keys) ? social_auth_keys.google_api_key : '' %>"
-         data-gcid="<%= (social_auth_keys) ? social_auth_keys.google_client_id : '' %>"
+         data-fbid="<%= facebook_app_id %>"
+         data-gid="<%= google_api_key %>"
+         data-gcid="<%= google_client_id %>"
          data-paystack="<%= process.env.PAYSTACK_API_KEY %>"
          data-mixpanel="<%= process.env.MIXPANEL_TOKEN %>"
 ></section>
@@ -79,6 +81,7 @@
 
 <!--End of Tawk.to Script-->
 <!--End of Tawk.to Script-->
-<script src="https://unpkg.com/voomsway@latest/voomsway.js"></script>
+<!--<script src="https://unpkg.com/voomsway@latest/voomsway.js"></script>-->
+<script src="/js/voomsway.js"></script>
 </body>
 </html>
