@@ -23,7 +23,7 @@
 
 </head>
 <body>
-<% include partials/navbar.ejs %>
+<% include partials/navbar1.ejs %>
 <section id="voomsway" class="main-section"
          data-apikey="<%= process.env.VOOMSWAY_API_KEY %>"
          data-apiClientKey="<%= process.env.VOOMSWAY_CLIENT_KEY %>"
@@ -38,35 +38,56 @@
          data-mixpanel="<%= process.env.MIXPANEL_TOKEN %>"
 ></section>
 
-<footer class="container-fluid  bg-light">
-    <div class="container mt-5">
-        <div class="row mt-5">
-            <div class="col-lg-4 col-sm-12 mt-2 mb-3">
-                <a class="navbar-brand footer-logo mt-5" href="/"><h1 class="logo-section">ITC</h1></a>
-                <h5 class="mt-3" style="color: grey; font-size: 16px;">ITC is a brain child of His Excellency Owelle Anayo Rochas Okorocha (OON), the Executive Governor of Imo State to revamp and reconstruct the existing wobbling and unsustainable Imo Mmunicipal Transport Service and develop same, into a sustainable land transportation system, with service criss-crossing the entire length and breadth of the 27 Local Government Areas of Imo State and beyond. </h5>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 mb-md-5 mb-5">
+                <div class="left w-75">
+                    <img class="img-fluid w-auto mb-3" style="height:40px;" src="/assets/logo@2x.jpg" alt="logo">
+                    <p>Access Transit Transport is well known for its regularly scheduled passenger service,
+                        the company also provides a number of other services for its customers such as value-priced
+                        same-day and early-next-day haulage and package delivery to numerous destinations in Nigeria.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><img src="/assets/icons/facebook.svg" alt="facebook icon"></a>
+                        <a href="#"><img src="/assets/icons/twitter.svg" alt="twitter icon"></a>
+                        <a href="#"><img src="/assets/icons/instagram.svg" alt="instagram icon"></a>
+                        <a href="#"><img src="/assets/icons/youtube.svg" alt="youtube icon"></a>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4 col-sm-12 mt-2 mb-3 justify-content-center">
-                <h5 class="mt-5 ml-5" style="font-weight: 600;">ABOUT</h5>
-                <a href="#" class="text-dark ml-5" style="color: grey; font-size: 17px;">About us</a><br>
-                <a href="#" class="text-dark ml-5" style="color: grey; font-size: 17px;">NYSC Camps</a><br>
-                <a href="#" class="text-dark ml-5" style="color: grey; font-size: 17px;">Terminals</a><br><br>
-                <a href="#" class="text-dark ml-5" style="color: grey; font-size: 17px;">Bus Rental Services</a><br>
-                <a href="#" class="text-dark ml-5" style="color: grey; font-size: 17px;">Hotel Services</a><br>
-                <a href="#" class="text-dark ml-5" style="color: grey; font-size: 17px;">West Africa Services</a>
-            </div>
-            <div class="col-lg-4 col-sm-12 mt-2 mb-3">
-                <h5 class="mt-5" style="font-weight: 600;">CONTACT</h5>
-                <p style=" color: grey; font-size: 16px;"><i class="fab fa-facebook fa-lg mr-3"></i> <i class="fab fa-twitter mr-3 fa-lg"></i> <i
-                            class="fab fa-instagram mr-3 fa-lg"></i><i class="fab fa-youtube fa-lg"></i></p>
-                <p style="color: grey;font-size: 16px;"> +234-813-619-7676</p>
-                <p class="mt-3" style="font-size: 16px; font-weight: 900;">Address</p>
-                <p style="color: grey;font-size: 16px;">Government House Annex Old Ministry Of Works Okigwe Road Owerri.
-                    Owerri, Imo
-                </p>
-                <p class="border"></p>
-                <p>© Copyright 2019. IMO TRANSPORTATION. All Rights Reserved. </p>
-            </div>
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col">
+                        <p class="heading">About</p>
+                        <a href="#">About Us</a>
+                        <a href="#">NYSC Camps</a>
+                        <a href="#">Terminals</a>
+                    </div>
+                    <div class="col">
+                        <p class="heading">Booking</p>
+                        <a href="#">Book a Bus</a>
+                        <a href="#">Freight Services</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="col-md col-12">
+                        <p class="heading">Contact</p>
+                        <a href="#">+234 703 203 0515</a>
+                        <a href="#">+234 703 203 0605</a>
+                        <a href="#">+234 703 203 1008</a>
+                    </div>
 
+                    <div class="col-12">
+                        <p class="heading">Address</p>
+                        <p>Km 14 Lekki-Epe Expressway Ikota<br>School Bus Stop, Lagos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="col-12">
+                <h5>© Copyright Access Transit Limited (ATL Motors) 2019  -  All rights reserved  |  Powered by <span><a class="font-weight-bold d-inline" href="#">Voomsway</a></span></h5>
+            </div>
         </div>
     </div>
 </footer>
