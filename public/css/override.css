@@ -1,0 +1,26 @@
+/*# sourceMappingURL=styles.css.map */
+.v-way-main.greyed {
+  height: 100%; }
+
+header {
+  padding: 1rem; }
+  header .navbar-light .bordered-btn {
+    border-color: #47b804;
+    color: #47b804; }
+    header .navbar-light .bordered-btn:hover {
+      color: white; }
+  header .navbar {
+    padding: .5rem 0; }
+
+.top-bar {
+  background: #348603; }
+  .top-bar .auth-actions-btns a.dropdown-toggle, .top-bar a {
+    font-size: 15px;
+    font-weight: 600;
+    color: white !important; }
+  .top-bar .auth-actions-btns a.text-custom {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 7px 20px; }
+
+.VwayHome {
+  margin-bottom: 2rem; }
