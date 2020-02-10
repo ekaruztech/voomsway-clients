@@ -1,139 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <!--<link rel="stylesheet" media="screen" href="https://unpkg.com/voomsway@latest/voomsway.css">-->
-    <link rel="stylesheet" media="screen" href="/styles/voomsway.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    
-    <link href="/assets/favicon.png" type="image/x-icon" rel="shortcut icon"/>
-    <title>ATL Motors - Access Transit Transport | Book Bus Trip Online</title>
+    <link rel="stylesheet" media="screen" href="/styles/voomsway.css">
+    <link rel="stylesheet" href='/css/styles.css'/>
+    <link rel="stylesheet" href='/css/override.css'/>
+    <link href="/images/car-img-receipt.png" type="image/x-icon" rel="shortcut icon"/>
+    <title>Imo State Mass Transport Company</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-93215177-2"
-    ></script>
-    
-  </head>
-  <body>
-    <% include partials/navbar1.ejs %>
-    <section
-      id="voomsway"
-      class="main-section"
-      data-apikey="<%= process.env.VOOMSWAY_API_KEY %>"
-      data-apiClientKey="<%= process.env.VOOMSWAY_CLIENT_KEY %>"
-      data-apiUrl="<%= process.env.VOOMSWAY_API_HOST %>"
-      data-baseUrl="<%= process.env.HOST %>"
-      data-verifyRedirect="<%= process.env.HOST %>/vway/verify-link"
-      data-passwordRedirect="<%= process.env.HOST %>/vway/update-password"
-      data-fbid="<%= facebook_app_id %>"
-      data-gid="<%= google_api_key %>"
-      data-gcid="<%= google_client_id %>"
-      data-paystack="<%= process.env.PAYSTACK_API_KEY %>"
-      data-mixpanel="<%= process.env.MIXPANEL_TOKEN %>"
-    ></section>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93215177-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-93215177-2');
+    </script>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 mb-md-5 mb-5">
-            <div class="left w-75">
-              <img
-                class="img-fluid w-auto mb-3"
-                style="height:40px;"
-                src="/assets/logo@2x.jpg"
-                alt="logo"
-              />
-              <p>
-                Access Transit Transport is well known for its regularly
-                scheduled passenger service, the company also provides a number
-                of other services for its customers such as value-priced
-                same-day and early-next-day haulage and package delivery to
-                numerous destinations in Nigeria.
-              </p>
-              <div class="social-links">
-                <a href="#"
-                  ><img src="/assets/icons/facebook.svg" alt="facebook icon"
-                /></a>
-                <a href="#"
-                  ><img src="/assets/icons/twitter.svg" alt="twitter icon"
-                /></a>
-                <a href="#"
-                  ><img src="/assets/icons/instagram.svg" alt="instagram icon"
-                /></a>
-                <a href="#"
-                  ><img src="/assets/icons/youtube.svg" alt="youtube icon"
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="row">
-              <div class="col">
-                <p class="heading">About</p>
-                <a href="#">About Us</a>
-                <a href="#">NYSC Camps</a>
-                <a href="#">Terminals</a>
-              </div>
-              <div class="col">
-                <p class="heading">Booking</p>
-                <a href="#">Book a Bus</a>
-                <a href="#">Freight Services</a>
-                <a href="#">Contact Us</a>
-              </div>
-              <div class="col-md col-12">
-                <p class="heading">Contact</p>
-                <a href="#">+234 703 203 0515</a>
-                <a href="#">+234 703 203 0605</a>
-                <a href="#">+234 703 203 1008</a>
-              </div>
+</head>
+<body>
+<% include partials/navbar.ejs %>
+<section id="voomsway" class="main-section"
+         data-apikey="<%= process.env.VOOMSWAY_API_KEY %>"
+         data-apiClientKey="<%= process.env.VOOMSWAY_CLIENT_KEY %>"
+         data-apiUrl="<%= process.env.VOOMSWAY_API_HOST %>"
+         data-baseUrl="<%= process.env.HOST %>"
+         data-verifyRedirect="<%= process.env.HOST %>/vway/verify-link"
+         data-passwordRedirect="<%= process.env.HOST %>/vway/update-password"
+         data-fbid="<%= facebook_app_id %>"
+         data-gid="<%= google_api_key %>"
+         data-gcid="<%= google_client_id %>"
+         data-paystack="<%= process.env.PAYSTACK_API_KEY %>"
+         data-mixpanel="<%= process.env.MIXPANEL_TOKEN %>"
+></section>
+<% include partials/footer.ejs %>
 
-              <div class="col-12">
-                <p class="heading">Address</p>
-                <p>
-                  Km 14 Lekki-Epe Expressway Ikota<br />School Bus Stop, Lagos
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row copyright">
-          <div class="col-12">
-            <h5>
-              © Copyright Access Transit Limited (ATL Motors) 2019 - All rights
-              reserved | Powered by
-              <span
-                ><a class="font-weight-bold d-inline" href="#"
-                  >Voomsway</a
-                ></span
-              >
-            </h5>
-          </div>
-        </div>
-      </div>
-    </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
 
-    <!--End of Tawk.to Script-->
-    <!--End of Tawk.to Script-->
-    <!--<script src="https://unpkg.com/voomsway@latest/voomsway.js"></script>-->
-    <script src="/js/voomsway.js"></script>
-  </body>
+<!--End of Tawk.to Script-->
+<!--End of Tawk.to Script-->
+<!--<script src="https://unpkg.com/voomsway@latest/voomsway.js"></script>-->
+<script src="/js/voomsway.js"></script>
+</body>
 </html>
