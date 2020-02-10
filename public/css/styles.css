@@ -614,4 +614,25 @@ footer .copyright {
 .booked.seat {
   color: #47b804 !important; }
 
+.about {
+  padding-top: 40px !important; }
+  .about h1 {
+    color: #47b804 !important; }
+  .about p {
+    font-size: 20px !important;
+    margin-bottom: 30px !important; }
+  .about .border-info {
+    color: #47b804 !important; }
+
+.section-title {
+  padding: 20px;
+  color: white;
+  background-color: #47b804; }
+  .section-title .title {
+    font-weight: 500;
+    margin: auto 0; }
+
+.main-section {
+  min-height: 80vh; }
+
 /*# sourceMappingURL=styles.css.map */
