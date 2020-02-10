@@ -676,6 +676,20 @@ footer {
 
   .hero .hero-content {
     padding: 1rem;
+    margin: 1rem;
+
+    br {display: none}
+
+    h1 {
+      font-size: 34px;
+      line-height: 44px;
+    }
+
+    h2 {
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 1rem;
+    }
   }
 
   .popular-trips .horizontal-scroll .trip-card {
