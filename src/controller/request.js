@@ -73,12 +73,12 @@ const APPRequest = {
 	async getAccount(apiKey) {
 		const config = {
 			method: 'get',
-			url: `/api/account/${apiKey}`
+			url: `/api/setting/${apiKey}`
 		};
 		return createRequest(config)
 			.then(response => response,
 				err => {
-					return {};
+					console.log('error : ', err);
 				});
 	}
 };
