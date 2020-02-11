@@ -27,3 +27,21 @@ header {
 
 .vm-main-tab .vm-filters-container .vm-filters-tab {
   border-bottom: 1px solid #eaeaea; }
+
+.section-title {
+  padding: 20px;
+  color: white;
+  background-color: #47b804; }
+  .section-title .title {
+    font-weight: 500;
+    margin: auto 0; }
+
+.about {
+  padding-top: 40px !important; }
+  .about h1 {
+    color: #47b804 !important; }
+  .about p {
+    font-size: 20px !important;
+    margin-bottom: 30px !important; }
+  .about .border-info {
+    color: #47b804 !important; }

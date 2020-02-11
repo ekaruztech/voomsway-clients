@@ -27,3 +27,26 @@ header {padding: 1rem;
 }
 .VwayHome {margin-bottom: 2rem;}
 .vm-main-tab .vm-filters-container .vm-filters-tab {border-bottom: 1px solid #eaeaea;}
+
+.section-title {
+  padding: 20px;
+  color: white;
+  background-color: $pri-color;
+  .title {
+    font-weight: 500;
+    margin: auto 0;
+  }
+}
+.about {
+  padding-top: 40px !important;
+  h1 {
+    color: $pri-color !important;
+  }
+  p {
+    font-size: 20px !important;
+    margin-bottom: 30px !important;
+  }
+  .border-info {
+    color: $pri-color !important;
+  }
+}
