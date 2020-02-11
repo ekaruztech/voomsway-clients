@@ -97,7 +97,6 @@ var AppController = {
               data = _ref2.data;
               console.log('data :::: ', data);
               res.render('trips', {
-                title: 'Efex Transport',
                 host: process.env.HOST,
                 facebook_app_id: process.env.FACEBOOK_APP_ID,
                 google_api_key: process.env.GOOGLE_API_KEY,

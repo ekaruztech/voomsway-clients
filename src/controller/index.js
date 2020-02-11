@@ -4,13 +4,8 @@ export const AppController = {
 	index(req, res, next) {
 		return res.render('index', { title: 'Efex Transport' });
 	},
-	async contact(req, res, next) {
-		const { data: { location, contact_info } } = await APPRequest.getAccount(process.env.VOOMSWAY_API_KEY);
-		if (location || contact_info) {
-			res.render('contact', { title: 'Efex Transport', location, contact_info });
-		} else {
-			res.render('contact', { title: 'Efex Transport' });
-		}
+	contact(req, res, next) {
+		res.render('contact', { title: 'Efex Transport' });
 	},
 	about(req, res, next) {
 		return res.render('about', { title: 'Efex Transport' });
@@ -25,7 +20,6 @@ export const AppController = {
 		const { data } = await APPRequest.getAccount(process.env.VOOMSWAY_CLIENT_KEY);
 		console.log('data :::: ', data);
 		res.render('trips', {
-			title: 'Efex Transport',
 			host: process.env.HOST,
 			facebook_app_id: process.env.FACEBOOK_APP_ID,
 			google_api_key: process.env.GOOGLE_API_KEY,
