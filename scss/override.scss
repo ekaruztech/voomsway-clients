@@ -6,15 +6,6 @@ $pri-color-darken: darken($pri-color,10%);
 /*# sourceMappingURL=styles.css.map */
 .v-way-main.greyed {height: 100%;}
 header {padding: 1rem;
-  .navbar-light {
-    .bordered-btn {
-      border-color: $pri-color;
-      color: $pri-color;
-      &:hover {
-        color: white;
-      }
-    }
-  }
   .navbar {padding: .5rem 0;}
 }
 .top-bar {
@@ -30,8 +21,6 @@ header {padding: 1rem;
 
 .section-title {
   padding: 20px;
-  color: white;
-  background-color: $pri-color;
   .title {
     font-weight: 500;
     margin: auto 0;
@@ -39,14 +28,8 @@ header {padding: 1rem;
 }
 .about {
   padding-top: 40px !important;
-  h1 {
-    color: $pri-color !important;
-  }
   p {
     font-size: 20px !important;
     margin-bottom: 30px !important;
-  }
-  .border-info {
-    color: $pri-color !important;
   }
 }

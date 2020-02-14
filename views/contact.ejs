@@ -97,33 +97,7 @@
                     </form>
                 </div>
                 <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-3 text-center">
-                    <ul class="list-unstyled mb-0">
-                        <% if (location) { %>
-                        <li><i class="fas fa-map-marker-alt fa-3x  text-info mb-2"></i>
-                            <p class="contactinfo">
-                                <%= location.street %>,
-                                <%= location.city %>, <%= location.state %>, <%= location.country %>
-                            </p>
-                        </li>
-                        <% } %>
-                        <% if (contact_info) { %>
-                        <li><i class="fas fa-phone mt-4 fa-3x  text-info mb-2"></i>
-                            <p class="contactinfo"><%= contact_info.phone_number %></p>
-                        </li>
-
-                        <li><i class="fas fa-envelope mt-4 fa-3x mb-2 "></i>
-                            <p class="contactinfo"><%= contact_info.email %></p>
-                        </li>
-                        <% } %>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
             </div>
-
         </section>
     </div>
 </section>
