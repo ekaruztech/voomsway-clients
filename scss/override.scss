@@ -1,0 +1,35 @@
+// :: COLORS
+$pri-color: #47b804;
+$pri-color-alt: #fafff7;
+$pri-color-darken: darken($pri-color,10%);
+
+/*# sourceMappingURL=styles.css.map */
+.v-way-main.greyed {height: 100%;}
+header {padding: 1rem;
+  .navbar {padding: .5rem 0;}
+}
+.top-bar {
+  background: $pri-color-darken;
+  .auth-actions-btns a.dropdown-toggle, a {font-size: 15px;font-weight: 600;color: white !important;}
+  .auth-actions-btns a.text-custom {
+    background: rgba(255, 255, 255, .2);
+    padding: 7px 20px;
+  }
+}
+.VwayHome {margin-bottom: 2rem;}
+.vm-main-tab .vm-filters-container .vm-filters-tab {border-bottom: 1px solid #eaeaea;}
+
+.section-title {
+  padding: 20px;
+  .title {
+    font-weight: 500;
+    margin: auto 0;
+  }
+}
+.about {
+  padding-top: 40px !important;
+  p {
+    font-size: 20px !important;
+    margin-bottom: 30px !important;
+  }
+}
