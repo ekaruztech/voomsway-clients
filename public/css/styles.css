@@ -1,6 +1,9 @@
 .green {
   color: #47b804; }
 
+.green {
+  color: #47b804; }
+
 a {
   color: #47b804;
   text-decoration: none !important; }
@@ -472,94 +475,31 @@ footer {
   .bus-routes .bottom {
     margin-top: -7rem; }
   footer .left {
-    width: 100% !important; } }
-<<<<<<< HEAD
-
-.btn-custom-primary {
-  background-color: #47b804 !important; }
-
-.btn-custom-white {
-  color: #47b804 !important; }
-
-.auth-actions-btns a {
-  color: #47b804 !important; }
-
-.color-custom {
-  color: #47b804 !important; }
-
-.number {
-  background-color: #47b804 !important;
-  border: 1px solid #47b804 !important; }
-
-.theme-background-color {
-  background-color: #47b804 !important; }
-
-.Progress .progress-spinner-message {
-  color: #47b804 !important; }
-
-.Progress > div {
-  background-color: #47b804 !important; }
-
-.Progress.alt div {
-  background-color: #ffffff !important; }
-
-.book-now {
-  background-color: #47b804 !important; }
-
-.card-body {
-  color: #989898 !important;
-  font-size: 14px !important; }
-
-.pri-btn {
-  border: 1px solid #47b804 !important;
-  color: #47b804; }
-  .pri-btn:hover {
-    background-color: #47b804 !important;
-    color: white !important; }
-
-.description {
-  color: #47b804 !important; }
-
-.btn-custom-lg {
-  border: 1px solid #47b804 !important; }
-
-.stroke-btn:hover {
-  background-color: #47b804 !important;
-  border: 1px solid #47b804 !important; }
-
-.down-arrow {
-  color: #47b804 !important; }
-
-.back-to-search {
-  color: #47b804 !important; }
-
-.btn-link {
-  color: #47b804 !important; }
-
-.booked.seat {
-  color: #47b804 !important; }
-
-.about {
-  padding-top: 40px !important; }
-  .about h1 {
+    width: 100% !important; }
+  .down-arrow {
     color: #47b804 !important; }
-  .about p {
-    font-size: 20px !important;
-    margin-bottom: 30px !important; }
-  .about .border-info {
+  .back-to-search {
     color: #47b804 !important; }
-
-.section-title {
-  padding: 20px;
-  color: white;
-  background-color: #47b804; }
-  .section-title .title {
-    font-weight: 500;
-    margin: auto 0; }
-
-.main-section {
-  min-height: 80vh; }
-
-/*# sourceMappingURL=styles.css.map */
-=======
->>>>>>> a04f2880917bc7067abba2652238961823ffb1da
+  .btn-link {
+    color: #47b804 !important; }
+  .booked.seat {
+    color: #47b804 !important; }
+  .about {
+    padding-top: 40px !important; }
+    .about h1 {
+      color: #47b804 !important; }
+    .about p {
+      font-size: 20px !important;
+      margin-bottom: 30px !important; }
+    .about .border-info {
+      color: #47b804 !important; }
+  .section-title {
+    padding: 20px;
+    color: white;
+    background-color: #47b804; }
+    .section-title .title {
+      font-weight: 500;
+      margin: auto 0; }
+  .main-section {
+    min-height: 80vh; }
+  /*# sourceMappingURL=styles.css.map */ }
