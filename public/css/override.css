@@ -4,11 +4,6 @@
 
 header {
   padding: 1rem; }
-  header .navbar-light .bordered-btn {
-    border-color: #47b804;
-    color: #47b804; }
-    header .navbar-light .bordered-btn:hover {
-      color: white; }
   header .navbar {
     padding: .5rem 0; }
 
@@ -29,19 +24,13 @@ header {
   border-bottom: 1px solid #eaeaea; }
 
 .section-title {
-  padding: 20px;
-  color: white;
-  background-color: #47b804; }
+  padding: 20px; }
   .section-title .title {
     font-weight: 500;
     margin: auto 0; }
 
 .about {
   padding-top: 40px !important; }
-  .about h1 {
-    color: #47b804 !important; }
   .about p {
     font-size: 20px !important;
     margin-bottom: 30px !important; }
-  .about .border-info {
-    color: #47b804 !important; }
