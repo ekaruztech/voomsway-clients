@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -119,6 +120,46 @@
         </div>
       </div>
     </footer>
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" media="screen" href="https://unpkg.com/voomsway@latest/voomsway.css">
+    <link rel="stylesheet" href='/css/styles.css'/>
+    <link rel="stylesheet" href='/css/override.css'/>
+    <link href="/assets/favicon.png" type="image/x-icon" rel="shortcut icon"/>
+    <title>ATL Motors - Access Transit Limited | Book Bus Trip Online</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93215177-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-93215177-2');
+    </script>
+
+</head>
+<body>
+<% include partials/navbar.ejs %>
+<section id="voomsway" class="main-section"
+         data-apikey="<%= process.env.VOOMSWAY_API_KEY %>"
+         data-apiClientKey="<%= process.env.VOOMSWAY_CLIENT_KEY %>"
+         data-apiUrl="<%= process.env.VOOMSWAY_API_HOST %>"
+         data-baseUrl="<%= process.env.HOST %>"
+         data-verifyRedirect="<%= process.env.HOST %>/vway/verify-link"
+         data-passwordRedirect="<%= process.env.HOST %>/vway/update-password"
+         data-fbid="<%= facebook_app_id %>"
+         data-gid="<%= google_api_key %>"
+         data-gcid="<%= google_client_id %>"
+         data-paystack="<%= process.env.PAYSTACK_API_KEY %>"
+         data-mixpanel="<%= process.env.MIXPANEL_TOKEN %>"
+></section>
+<% include partials/footer.ejs %>
+
+>>>>>>> a04f2880917bc7067abba2652238961823ffb1da
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -131,9 +172,17 @@
       crossorigin="anonymous"
     ></script>
 
+<<<<<<< HEAD
     <!--End of Tawk.to Script-->
     <!--End of Tawk.to Script-->
     <!--<script src="https://unpkg.com/voomsway@latest/voomsway.js"></script>-->
     <script src="/js/voomsway.js"></script>
   </body>
+=======
+<!--End of Tawk.to Script-->
+<!--End of Tawk.to Script-->
+<!--<script src="https://unpkg.com/voomsway@latest/voomsway.js"></script>-->
+<script src="https://unpkg.com/voomsway@latest/voomsway.js"></script>
+</body>
+>>>>>>> a04f2880917bc7067abba2652238961823ffb1da
 </html>

@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<% include partials/header.ejs %>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!--<link rel="stylesheet" media="screen" href="https://unpkg.com/voomsway@latest/voomsway.css">-->
+    <link rel="stylesheet" media="screen" href="/styles/voomsway.css">
+    <link rel="stylesheet" href='/css/styles.css'/>
+    <link rel="stylesheet" href='/css/override.css'/>
+    <link href="/assets/favicon.png" type="image/x-icon" rel="shortcut icon"/>
+    <title>ATL Motors - Access Transit Limited | Book Bus Trip Online</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93215177-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-93215177-2');
+    </script>
+
+</head>
 <body>
 <% include partials/navbar.ejs %>
 <section class="main-section">
@@ -77,33 +97,7 @@
                     </form>
                 </div>
                 <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-3 text-center">
-                    <ul class="list-unstyled mb-0">
-                        <% if (location) { %>
-                        <li><i class="fas fa-map-marker-alt fa-3x  text-info mb-2"></i>
-                            <p class="contactinfo">
-                                <%= location.street %>,
-                                <%= location.city %>, <%= location.state %>, <%= location.country %>
-                            </p>
-                        </li>
-                        <% } %>
-                        <% if (contact_info) { %>
-                        <li><i class="fas fa-phone mt-4 fa-3x  text-info mb-2"></i>
-                            <p class="contactinfo"><%= contact_info.phone_number %></p>
-                        </li>
-
-                        <li><i class="fas fa-envelope mt-4 fa-3x mb-2 "></i>
-                            <p class="contactinfo"><%= contact_info.email %></p>
-                        </li>
-                        <% } %>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
             </div>
-
         </section>
     </div>
 </section>

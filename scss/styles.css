@@ -223,11 +223,11 @@ body {
 }
 
 .btn-custom-primary {
-  background-color: #47b804 !important;
+  background-color: #ff3333 !important;
 }
 
 .btn-custom-white {
-  color: #47b804 !important;
+  color: #ff3333 !important;
 }
 
 .color-custom {
@@ -328,5 +328,10 @@ body {
 .book-ticket {
   background-color: #ff3333;
 }
+
+
+/*Plugin Styles */
+
+
 
 /*# sourceMappingURL=styles.css.map */
