@@ -7,15 +7,15 @@ header {
   header .navbar {
     padding: .5rem 0; }
 
-.top-bar .auth-actions-btns a.dropdown-toggle {
-  font-size: 15px;
-  font-weight: 600; }
-  .top-bar .auth-actions-btns a.dropdown-toggle.dropdown-item {
-    color: #47b804; }
-
-.top-bar .auth-actions-btns a.text-custom {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 7px 20px; }
+.top-bar {
+  background: whitesmoke; }
+  .top-bar .auth-actions-btns a.dropdown-toggle {
+    font-size: 15px;
+    font-weight: 600;
+    color: white !important; }
+  .top-bar .auth-actions-btns a.text-custom {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 7px 20px; }
 
 .VwayHome {
   margin-bottom: 2rem; }
@@ -34,3 +34,6 @@ header {
   .about p {
     font-size: 20px !important;
     margin-bottom: 30px !important; }
+
+.main-section {
+  height: 600px !important; }

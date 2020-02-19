@@ -16,13 +16,14 @@ header {
 }
 
 .top-bar {
-  //background: $pri-color-darken;
+  background: rgb(245, 245, 245);
   .auth-actions-btns a.dropdown-toggle {
     font-size: 15px;
     font-weight: 600;
-    &.dropdown-item {
-      color: $pri-color;
-    }
+    color: white !important;
+    //&.dropdown-item {
+    //  color: $pri-color;
+    //}
   }
   .auth-actions-btns a.text-custom {
     background: rgba(255, 255, 255, .2);
@@ -52,4 +53,8 @@ header {
     font-size: 20px !important;
     margin-bottom: 30px !important;
   }
+}
+
+.main-section{
+  height: 600px !important;
 }
