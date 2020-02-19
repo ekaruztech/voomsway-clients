@@ -9,7 +9,7 @@ header {
 
 .top-bar {
   background: #348603; }
-  .top-bar .auth-actions-btns a.dropdown-toggle, .top-bar a {
+  .top-bar .auth-actions-btns a.dropdown-toggle {
     font-size: 15px;
     font-weight: 600;
     color: white !important; }
