@@ -16,7 +16,7 @@ header {
 }
 
 .top-bar {
-  background: $pri-color-darken;
+  background: rgb(245, 245, 245);
   .auth-actions-btns a.dropdown-toggle {
     font-size: 15px;
     font-weight: 600;
@@ -53,4 +53,8 @@ header {
     font-size: 20px !important;
     margin-bottom: 30px !important;
   }
+}
+
+.main-section{
+  height: 600px !important;
 }
