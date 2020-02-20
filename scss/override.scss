@@ -11,12 +11,12 @@ $pri-color-darken: darken($pri-color, 10%);
 header {
   padding: 1rem;
   .navbar {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 }
 
-.top-bar {
-  background: rgb(245, 245, 245);
+ .top-bar {
+//   background: rgb(245, 245, 245);
   .auth-actions-btns a.dropdown-toggle {
     font-size: 15px;
     font-weight: 600;
@@ -26,7 +26,7 @@ header {
     //}
   }
   .auth-actions-btns a.text-custom {
-    background: rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, 0.2);
     padding: 7px 20px;
   }
 }
@@ -53,8 +53,4 @@ header {
     font-size: 20px !important;
     margin-bottom: 30px !important;
   }
-}
-
-.main-section{
-  height: 600px !important;
 }
