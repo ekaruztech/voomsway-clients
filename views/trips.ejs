@@ -14,16 +14,21 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93215177-2"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-93215177-2');
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+
+		gtag('js', new Date());
+		gtag('config', 'UA-93215177-2');
     </script>
 
 </head>
 <body>
 <% include partials/navbar.ejs %>
-<section id="voomsway" class="main-section"
+<section class="main-section">
+    <div id="voomsway"
          data-apikey="<%= process.env.VOOMSWAY_API_KEY %>"
          data-apiClientKey="<%= process.env.VOOMSWAY_CLIENT_KEY %>"
          data-apiUrl="<%= process.env.VOOMSWAY_API_HOST %>"
@@ -35,9 +40,9 @@
          data-gcid="<%= google_client_id %>"
          data-paystack="<%= process.env.PAYSTACK_API_KEY %>"
          data-mixpanel="<%= process.env.MIXPANEL_TOKEN %>"
-></section>
+    ></div>
+</section>
 <% include partials/footer.ejs %>
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
