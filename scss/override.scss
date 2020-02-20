@@ -21,10 +21,11 @@ header {
     font-size: 15px;
     font-weight: 600;
     color: white !important;
-    //&.dropdown-item {
-    //  color: $pri-color;
-    //}
   }
+   .dropdown a.dropdown-toggle {
+     color: $pri-color !important;
+   }
+
   .auth-actions-btns a.text-custom {
     background: rgba(255, 255, 255, 0.2);
     padding: 7px 20px;

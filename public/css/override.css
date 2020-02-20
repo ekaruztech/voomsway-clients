@@ -12,6 +12,9 @@ header {
   font-weight: 600;
   color: white !important; }
 
+.top-bar .dropdown a.dropdown-toggle {
+  color: #47b804 !important; }
+
 .top-bar .auth-actions-btns a.text-custom {
   background: rgba(255, 255, 255, 0.2);
   padding: 7px 20px; }
