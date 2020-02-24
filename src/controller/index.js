@@ -18,7 +18,7 @@ export const AppController = {
 	},
 	async entry(req, res, next) {
 		const { data } = await APPRequest.getAccount(process.env.VOOMSWAY_CLIENT_KEY);
-		// console.log('data :::: ', data);
+		console.log('data :::: ', data);
 		res.render('trips', {
 			host: process.env.HOST,
 			facebook_app_id: process.env.FACEBOOK_APP_ID,
