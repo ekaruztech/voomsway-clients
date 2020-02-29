@@ -70,7 +70,7 @@ const APPRequest = {
 				});
 	},
 	
-	async getAccount(apiKey) {
+	async getAccountSettings(apiKey) {
 		const config = {
 			method: 'get',
 			url: `/api/setting/${apiKey}`

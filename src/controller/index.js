@@ -1,8 +1,15 @@
 import APPRequest from '../controller/request';
 
 export const AppController = {
-	index(req, res, next) {
-		return res.render('index', { title: 'ATL Transport' });
+	async index(req, res, next) {
+		const { data } = await APPRequest.getAccountSettings(process.env.VOOMSWAY_CLIENT_KEY);
+		res.render('index', {
+			website: (data && data.contactInfo) ? data.contactInfo.website : '',
+			host: process.env.HOST,
+			facebook_app_id: process.env.FACEBOOK_APP_ID,
+			google_api_key: process.env.GOOGLE_API_KEY,
+			google_client_id: process.env.GOOGLE_CLIENT_ID,
+		});
 	},
 	contact(req, res, next) {
 		res.render('contact', { title: 'ATL Transport' });
@@ -12,19 +19,6 @@ export const AppController = {
 	},
 	terms(req, res, next) {
 		return res.render('terms', { title: 'ATL Transport' });
-	},
-	receipt(req, res, next) {
-		return res.render('receipt', { title: 'ATL Transport' });
-	},
-	async entry(req, res, next) {
-		const { data } = await APPRequest.getAccount(process.env.VOOMSWAY_CLIENT_KEY);
-		// console.log('data :::: ', data);
-		res.render('trips', {
-			host: process.env.HOST,
-			facebook_app_id: process.env.FACEBOOK_APP_ID,
-			google_api_key: process.env.GOOGLE_API_KEY,
-			google_client_id: process.env.GOOGLE_CLIENT_ID,
-		});
 	},
 	async terminals(req, res, next) {
 		const page = req.query.page || 1;
