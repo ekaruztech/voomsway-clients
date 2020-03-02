@@ -108,8 +108,8 @@ var APPRequest = {
 
     return getTerminals;
   }(),
-  getAccount: function () {
-    var _getAccount = (0, _asyncToGenerator2["default"])(
+  getAccountSettings: function () {
+    var _getAccountSettings = (0, _asyncToGenerator2["default"])(
     /*#__PURE__*/
     _regenerator["default"].mark(function _callee2(apiKey) {
       var config;
@@ -135,11 +135,11 @@ var APPRequest = {
       }, _callee2);
     }));
 
-    function getAccount(_x2) {
-      return _getAccount.apply(this, arguments);
+    function getAccountSettings(_x2) {
+      return _getAccountSettings.apply(this, arguments);
     }
 
-    return getAccount;
+    return getAccountSettings;
   }()
 };
 var _default = APPRequest;
