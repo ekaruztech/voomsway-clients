@@ -14,10 +14,10 @@ var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/
 var _request = _interopRequireDefault(require("../controller/request"));
 
 var AppController = {
-  index: function () {
-    var _index = (0, _asyncToGenerator2["default"])(
+  index: function index(req, res, next) {
+    return (0, _asyncToGenerator2["default"])(
     /*#__PURE__*/
-    _regenerator["default"].mark(function _callee(req, res, next) {
+    _regenerator["default"].mark(function _callee() {
       var _ref, data;
 
       return _regenerator["default"].wrap(function _callee$(_context) {
@@ -44,14 +44,8 @@ var AppController = {
           }
         }
       }, _callee);
-    }));
-
-    function index(_x, _x2, _x3) {
-      return _index.apply(this, arguments);
-    }
-
-    return index;
-  }(),
+    }))();
+  },
   contact: function contact(req, res, next) {
     res.render('contact', {
       title: 'ATL Transport'
@@ -67,10 +61,10 @@ var AppController = {
       title: 'ATL Transport'
     });
   },
-  terminals: function () {
-    var _terminals = (0, _asyncToGenerator2["default"])(
+  terminals: function terminals(req, res, next) {
+    return (0, _asyncToGenerator2["default"])(
     /*#__PURE__*/
-    _regenerator["default"].mark(function _callee2(req, res, next) {
+    _regenerator["default"].mark(function _callee2() {
       var page, _ref2, _meta, data;
 
       return _regenerator["default"].wrap(function _callee2$(_context2) {
@@ -108,13 +102,7 @@ var AppController = {
           }
         }
       }, _callee2);
-    }));
-
-    function terminals(_x4, _x5, _x6) {
-      return _terminals.apply(this, arguments);
-    }
-
-    return terminals;
-  }()
+    }))();
+  }
 };
 exports.AppController = AppController;
