@@ -19,7 +19,7 @@ var _dotenv = _interopRequireDefault(require("dotenv"));
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 _dotenv["default"].config();
 
@@ -71,10 +71,10 @@ var APPRequest = {
    * @param {Object} query a company
    * @return {Object} res The response object
    */
-  getTerminals: function getTerminals(query) {
-    return (0, _asyncToGenerator2["default"])(
+  getTerminals: function () {
+    var _getTerminals = (0, _asyncToGenerator2["default"])(
     /*#__PURE__*/
-    _regenerator["default"].mark(function _callee() {
+    _regenerator["default"].mark(function _callee(query) {
       var config;
       return _regenerator["default"].wrap(function _callee$(_context) {
         while (1) {
@@ -100,12 +100,18 @@ var APPRequest = {
           }
         }
       }, _callee);
-    }))();
-  },
-  getAccountSettings: function getAccountSettings(apiKey) {
-    return (0, _asyncToGenerator2["default"])(
+    }));
+
+    function getTerminals(_x) {
+      return _getTerminals.apply(this, arguments);
+    }
+
+    return getTerminals;
+  }(),
+  getAccountSettings: function () {
+    var _getAccountSettings = (0, _asyncToGenerator2["default"])(
     /*#__PURE__*/
-    _regenerator["default"].mark(function _callee2() {
+    _regenerator["default"].mark(function _callee2(apiKey) {
       var config;
       return _regenerator["default"].wrap(function _callee2$(_context2) {
         while (1) {
@@ -127,8 +133,14 @@ var APPRequest = {
           }
         }
       }, _callee2);
-    }))();
-  }
+    }));
+
+    function getAccountSettings(_x2) {
+      return _getAccountSettings.apply(this, arguments);
+    }
+
+    return getAccountSettings;
+  }()
 };
 var _default = APPRequest;
 exports["default"] = _default;
