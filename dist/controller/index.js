@@ -15,9 +15,36 @@ var _request = _interopRequireDefault(require("../controller/request"));
 
 var AppController = {
   index: function index(req, res, next) {
-    return res.render('index', {
-      title: 'ATL Transport'
-    });
+    return (0, _asyncToGenerator2["default"])(
+    /*#__PURE__*/
+    _regenerator["default"].mark(function _callee() {
+      var _ref, data;
+
+      return _regenerator["default"].wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return _request["default"].getAccountSettings(process.env.VOOMSWAY_CLIENT_KEY);
+
+            case 2:
+              _ref = _context.sent;
+              data = _ref.data;
+              res.render('index', {
+                website: data && data.contactInfo ? data.contactInfo.website : '',
+                host: process.env.HOST,
+                facebook_app_id: process.env.FACEBOOK_APP_ID,
+                google_api_key: process.env.GOOGLE_API_KEY,
+                google_client_id: process.env.GOOGLE_CLIENT_ID
+              });
+
+            case 5:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }))();
   },
   contact: function contact(req, res, next) {
     res.render('contact', {
@@ -34,53 +61,10 @@ var AppController = {
       title: 'ATL Transport'
     });
   },
-  receipt: function receipt(req, res, next) {
-    return res.render('receipt', {
-      title: 'ATL Transport'
-    });
-  },
-  entry: function () {
-    var _entry = (0, _asyncToGenerator2["default"])(
+  terminals: function terminals(req, res, next) {
+    return (0, _asyncToGenerator2["default"])(
     /*#__PURE__*/
-    _regenerator["default"].mark(function _callee(req, res, next) {
-      var _ref, data;
-
-      return _regenerator["default"].wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _context.next = 2;
-              return _request["default"].getAccount(process.env.VOOMSWAY_CLIENT_KEY);
-
-            case 2:
-              _ref = _context.sent;
-              data = _ref.data;
-              // console.log('data :::: ', data);
-              res.render('trips', {
-                host: process.env.HOST,
-                facebook_app_id: process.env.FACEBOOK_APP_ID,
-                google_api_key: process.env.GOOGLE_API_KEY,
-                google_client_id: process.env.GOOGLE_CLIENT_ID
-              });
-
-            case 5:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, _callee);
-    }));
-
-    function entry(_x, _x2, _x3) {
-      return _entry.apply(this, arguments);
-    }
-
-    return entry;
-  }(),
-  terminals: function () {
-    var _terminals = (0, _asyncToGenerator2["default"])(
-    /*#__PURE__*/
-    _regenerator["default"].mark(function _callee2(req, res, next) {
+    _regenerator["default"].mark(function _callee2() {
       var page, _ref2, _meta, data;
 
       return _regenerator["default"].wrap(function _callee2$(_context2) {
@@ -118,13 +102,7 @@ var AppController = {
           }
         }
       }, _callee2);
-    }));
-
-    function terminals(_x4, _x5, _x6) {
-      return _terminals.apply(this, arguments);
-    }
-
-    return terminals;
-  }()
+    }))();
+  }
 };
 exports.AppController = AppController;
