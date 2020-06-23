@@ -1,3 +1,10 @@
+
+$bg-primary: #47b804;
+$accent-color: #151933;
+$accent-light-color: #e7ece9;
+
+.green {
+  color: #47b804; }
 // :: COLORS
 $pri-color: #47b804;
 $pri-color-alt: #fafff7;;
@@ -732,5 +739,43 @@ footer {
       width: 100% !important;
     }
   }
+.down-arrow{
+  color: #47b804 !important;
+}
+.back-to-search{
+  color: #47b804 !important;
+}
+.btn-link{
+  color: #47b804 !important;
+}
+.booked.seat{
+  color: #47b804 !important;
+}
 
+.about {
+  padding-top: 40px !important;
+  h1 {
+    color: $bg-primary !important;
+  }
+  p {
+    font-size: 20px !important;
+    margin-bottom: 30px !important;
+  }
+  .border-info {
+    color: $bg-primary !important;
+  }
+}
+.section-title {
+  padding: 20px;
+  color: white;
+  background-color: $bg-primary;
+  .title {
+    font-weight: 500;
+    margin: auto 0;
+  }
+}
+.main-section {
+  min-height: 100vh - 20;
+}
+/*# sourceMappingURL=styles.css.map */
 }

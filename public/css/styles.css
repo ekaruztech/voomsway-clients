@@ -1,6 +1,9 @@
 .green {
   color: #47b804; }
 
+.green {
+  color: #47b804; }
+
 a {
   color: #47b804;
   text-decoration: none !important; }
@@ -472,4 +475,31 @@ footer {
   .bus-routes .bottom {
     margin-top: -7rem; }
   footer .left {
-    width: 100% !important; } }
+    width: 100% !important; }
+  .down-arrow {
+    color: #47b804 !important; }
+  .back-to-search {
+    color: #47b804 !important; }
+  .btn-link {
+    color: #47b804 !important; }
+  .booked.seat {
+    color: #47b804 !important; }
+  .about {
+    padding-top: 40px !important; }
+    .about h1 {
+      color: #47b804 !important; }
+    .about p {
+      font-size: 20px !important;
+      margin-bottom: 30px !important; }
+    .about .border-info {
+      color: #47b804 !important; }
+  .section-title {
+    padding: 20px;
+    color: white;
+    background-color: #47b804; }
+    .section-title .title {
+      font-weight: 500;
+      margin: auto 0; }
+  .main-section {
+    min-height: 80vh; }
+  /*# sourceMappingURL=styles.css.map */ }

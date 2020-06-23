@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://unpkg.com/voomsway@latest/voomsway.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/override.css" />
+    <link href="/assets/favicon.png" type="image/x-icon" rel="shortcut icon" />
+    <title>ATL Motors - Access Transit Limited | Book Bus Trip Online</title>
 
-<% include partials/header.ejs %>
-
-<body>
-<%
-const capitalizeFirstLetter = (string) => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-};
-%>
-<% include partials/navbar.ejs %>
-<section class="main-section">
-    <div class="container-fluid section-title">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-93215177-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-93215177-2');
+    </script>
+  </head>
+  <body>
+    <% const capitalizeFirstLetter = (string) => { return
+    string.charAt(0).toUpperCase() + string.slice(1); }; %> <% include
+    partials/navbar.ejs %>
+    <section class="main-section1">
+      <div class="container-fluid section-title">
         <div class="row">
-            <div class="col-lg-12 col-sm-12 text-center">
-                <h1 class="title">Our Terminals</h1>
-            </div>
+          <div class="col-lg-12 col-sm-12 text-center">
+            <h2 class="title">Our Terminals</h2>
+          </div>
         </div>
-    </div>
-    <div class="container mt-3 terminal">
+      </div>
+      <!-- <div class="container mt-3 terminal">
         <div class="row mt-3">
             <% terminals.forEach( (terminal) => { %>
             <div class="col-lg-6 col-sm-12 ">
@@ -47,8 +73,202 @@ const capitalizeFirstLetter = (string) => {
             </div>
             <% }) %>
         </div>
-    </div>
-</section>
-<% include partials/footer.ejs %>
-</body>
+    </div> -->
+      <div class="container mt-3 terminal">
+        <div class="row mt-3">
+            <div class="col-lg-4 col-sm-12 ">
+                <div class="card bg-white shadow-sm mt-3">
+                  <div class="card-body mt-2">
+                    <h2 class="card-title">Lagos State</h2>
+                    <p class="card-title mt-2">
+                      <i class="fas fa-location-arrow fa-lg"></i> Jibowu
+                    </p>
+                    
+                    <p class="card-title mt-2">
+                        <i class="fas fa-male fa-lg"></i> Joy Ime Edet</p>
+                    <p class="card-title mt-2">
+                      <i class="fas fa-phone-volume fa-lg"> </i> +2347089543922
+                    </p>
+                    <p class="card-title mt-2">
+                        <i class="fas fa-address-card fa-lg"></i> 9 Ikorodu Road, Jibowu
+                    </p>
+                  </div>
+                </div>
+              </div>
+          <div class="col-lg-4 col-sm-12 ">
+            <div class="card bg-white shadow-sm mt-3">
+              <div class="card-body mt-2">
+                <h2 class="card-title">Rivers State</h2>
+                <p class="card-title mt-2">
+                  <i class="fas fa-location-arrow fa-lg"></i> Port Harcourt
+                </p>
+                
+                <p class="card-title mt-2">
+                    <i class="fas fa-male fa-lg"></i> Israel I. Elijah</p>
+                <p class="card-title mt-2">
+                  <i class="fas fa-phone-volume fa-lg"> </i> +2348037006680
+                </p>
+                <p class="card-title mt-2">
+                    <i class="fas fa-address-card fa-lg"></i> 59, East-West road
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 ">
+            <div class="card bg-white shadow-sm mt-3">
+              <div class="card-body mt-2">
+                <h2 class="card-title">Imo State</h2>
+                <p class="card-title mt-2">
+                  <i class="fas fa-location-arrow fa-lg"></i> Owerri
+                </p>
+                
+                <p class="card-title mt-2">
+                    <i class="fas fa-male fa-lg"></i></p>
+                <p class="card-title mt-2">
+                  <i class="fas fa-phone-volume fa-lg"> </i> +2348034996298
+                </p>
+                <p class="card-title mt-2">
+                    <i class="fas fa-address-card fa-lg"></i> Beside Libra Terminal, Relief Junction
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 ">
+            <div class="card bg-white shadow-sm mt-3">
+              <div class="card-body mt-2">
+                <h2 class="card-title">Cross River</h2>
+                <p class="card-title mt-2">
+                  <i class="fas fa-location-arrow fa-lg"></i> Calabar
+                </p>
+                
+                <p class="card-title mt-2">
+                    <i class="fas fa-male fa-lg"></i> Isaac Oden Augustin </p>
+                <p class="card-title mt-2">
+                  <i class="fas fa-phone-volume fa-lg"> +2348030942719</i>
+                </p>
+                <p class="card-title mt-2">
+                    <i class="fas fa-address-card fa-lg"></i> 51, Eta-Abor Street
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 ">
+            <div class="card bg-white shadow-sm mt-3">
+              <div class="card-body mt-2">
+                <h2 class="card-title">FCT</h2>
+                <p class="card-title mt-2">
+                  <i class="fas fa-location-arrow fa-lg"></i> Abuja
+                </p>
+                
+                <p class="card-title mt-2">
+                    <i class="fas fa-male fa-lg"></i> Cynthia Nceyoho</p>
+                <p class="card-title mt-2">
+                  <i class="fas fa-phone-volume fa-lg"> </i> +2347087509330
+                </p>
+                <p class="card-title mt-2">
+                    <i class="fas fa-address-card fa-lg"></i> Suite 5, Fermall Plaza
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 ">
+            <div class="card bg-white shadow-sm mt-3">
+              <div class="card-body mt-2">
+                <h2 class="card-title">Edo State</h2>
+                <p class="card-title mt-2">
+                  <i class="fas fa-location-arrow fa-lg"></i> Benin
+                </p>
+                
+                <p class="card-title mt-2">
+                    <i class="fas fa-male fa-lg"></i> Friday Natamaren</p>
+                <p class="card-title mt-2">
+                  <i class="fas fa-phone-volume fa-lg"> </i> +2348174648041
+                </p>
+                <p class="card-title mt-2">
+                    <i class="fas fa-address-card fa-lg"></i> Udaro Plaza, Opp Zenith Bank
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 ">
+            <div class="card bg-white shadow-sm mt-3">
+              <div class="card-body mt-2">
+                <h2 class="card-title">Cross River</h2>
+                <p class="card-title mt-2">
+                  <i class="fas fa-location-arrow fa-lg"></i> Ugep
+                </p>
+                
+                <p class="card-title mt-2">
+                    <i class="fas fa-male fa-lg"></i></p>
+                <p class="card-title mt-2">
+                  <i class="fas fa-phone-volume fa-lg"> </i>
+                </p>
+                <p class="card-title mt-2">
+                    <i class="fas fa-address-card fa-lg"></i> 59, 54, Ikom Calabar Highway, Iteman. Ugep
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 ">
+            <div class="card bg-white shadow-sm mt-3">
+              <div class="card-body mt-2">
+                <h2 class="card-title">Lagos State</h2>
+                <p class="card-title mt-2">
+                  <i class="fas fa-location-arrow fa-lg"></i> Lekki
+                </p>
+                
+                <p class="card-title mt-2">
+                    <i class="fas fa-male fa-lg"></i> Princess</p>
+                <p class="card-title mt-2">
+                  <i class="fas fa-phone-volume fa-lg"> </i>
+                </p>
+                <p class="card-title mt-2">
+                    <i class="fas fa-address-card fa-lg"></i> Km 14, Lekki Epe Expressway, Ikota School Bus stop
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 ">
+            <div class="card bg-white shadow-sm mt-3">
+              <div class="card-body mt-2">
+                <h2 class="card-title">Rivers State</h2>
+                <p class="card-title mt-2">
+                  <i class="fas fa-location-arrow fa-lg"></i> Port Harcourt
+                </p>
+                
+                <p class="card-title mt-2">
+                    <i class="fas fa-male fa-lg"></i> </p>
+                <p class="card-title mt-2">
+                  <i class="fas fa-phone-volume fa-lg"> </i> 
+                </p>
+                <p class="card-title mt-2">
+                    <i class="fas fa-address-card fa-lg"></i> Izizi Plaza, Oil Mill Bust Stop
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 ">
+            <div class="card bg-white shadow-sm mt-3">
+              <div class="card-body mt-2">
+                <h2 class="card-title">Rivers State</h2>
+                <p class="card-title mt-2">
+                  <i class="fas fa-location-arrow fa-lg"></i> Port Harcourt
+                </p>
+                
+                <p class="card-title mt-2">
+                    <i class="fas fa-male fa-lg"></i> </p>
+                <p class="card-title mt-2">
+                  <i class="fas fa-phone-volume fa-lg"> </i> 
+                </p>
+                <p class="card-title mt-2">
+                    <i class="fas fa-address-card fa-lg"></i> 11 Stadium Road(ken Saro Wiwa Road)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <% include partials/footer.ejs %>
+  </body>
 </html>
